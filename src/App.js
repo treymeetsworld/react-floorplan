@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import FloorPlan from './FloorPlan'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <FloorPlan
+    bedroom="Bedroom 1"
+    kitchen={ 
+      <>
+      <p>Kitchen</p>
+      <div id="oven">
+        <p>Oven</p>
+      </div>
+      <div id="sink">
+        <p>Sink</p>
+      </div>
+      </>
+    }
+    fullBath='Full Bath'
+    bedroom2='Bedroom 2'
+    livingRoom='Living Room'
+    halfBath='Half Bath'
+    bedroom3='Bedroom 3'
+  />
+  </>
   );
 }
 
